@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p8_2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #un, #dos{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }    
+    #un{
+        padding: 1.2em;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 5;
+        font-family: 'Kalnia', serif;
+    }
+    h1, h2{
+        text-align: center;
+        font-size: 5em;
+        line-height: .8em;
+    }
+    #dos{
+        padding: 1.5em 7em;
+        overflow: hidden;
+        z-index: 1;
+        font-family: 'Roboto', sans-serif;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+    h3,h4,h5{
+        font-size: 3em;
+        margin: 4% 0 0 0 ;
+    }
+    h4{
+        display: flex;
+        justify-content: space-between;
+    }
+    h5{
+        display: flex;
+        justify-content: space-around;
+    }
+    @media only screen and (max-width:710px) {
+        body{
+            background-color: rgb(0, 67, 139);
+        }
+        #dos{
+            padding: 1.5em .2em;
+        }
+    }
+    @media only screen and (max-width:522px) {
+        body{
+            background-color: rgb(0, 255, 60);
+        }
+        #dos{
+            padding: 1.5em .2em;
+        }
+        h1,h2{
+            font-size: 4em;
+
+        }
+        h3,h4,h5{
+            font-size: 1.5em;
+            margin: 8% 0 0 0;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="un">
+       <h1>Eric Hu</br>GIWYFI</h1>
+       <h2>Virginia</br>Commonwealth</br>University</h2>
+    </div>
+    <div id="dos">
+        <h3>Object+Methods</br>Lecture series</h3>
+        <h4><span>3/1 The Depot,</span><span>4:30pm</span></h4>
+        <h4><span>91780</br>06510</br>11211</span><span>N16JP</span></h4>
+        <h5><span>11222</span><span>H2V4G9</span></h5>
+    </div>
+</body>
+</html>
